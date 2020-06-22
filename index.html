@@ -1,0 +1,364 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+ <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<style>
+  .flex-container {
+display: -webkit-flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.jumbotron{
+background-image: radial-gradient(yellow,lightgreen);
+}
+
+
+
+body {
+background-color: skyblue;
+}
+.flex-container > div {
+ background-image: radial-gradient(rgb(113, 194, 241),lightgreen); 
+  width: auto;
+  margin: 5px;
+text-align: left;
+line-height: auto;
+border-radius: 10px
+}
+.choosen_town{text-align: center;}
+
+.container-fluid{background-color: skyblue;}
+header input {  width: 100%;
+max-width: 280px;
+padding: 10px 15px;
+border: none;
+outline: none;
+background-color: rgba(255, 255, 255, 255);
+border-radius: 14px 0px 14px 0px;
+border-bottom: 3px solid skyblue;
+
+color: #313131;
+font-size: 15px;
+}
+     </style>
+     <link rel="stylesheet" href="css/main.css">
+ </head>
+
+
+     <nav class="navbar navbar-default " >
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <a class="navbar-brand" >Předpověd počasí</a>
+         </div>
+                         <ul class="nav navbar-nav">
+             <li  ><a href="index2.html">Aktuální</a></li>
+             <li class="active"><a href="index.html">Dlouhodobá</a></li>
+             
+           </ul> 
+         </div>
+         
+       </div>
+     </nav>
+     
+
+
+<div class="jumbotron jumbotron-fluid">
+ <div class="container">
+   <div class="row"> <label></label></div>
+       <div class="row">
+         <div class="col-sm-3"><h4>Napiš Město:</h4></div>
+         <div class="col-sm-4">
+                   
+                 <header>  
+                   <input type="text" autocomplete="off" id="search-box" 
+                     placeholder="Search for a city..." />
+                   </header>
+
+                 </div></div>
+                 
+<div class="row"> <label></label></div>
+
+
+                 <div class="row">
+                   <div class="col-sm-3"><h4>Vyber Město:</h4></div>
+               <div class="col-sm-2">
+                       <select class="form-control" id="select-box">
+                         <option>-</option>
+                         <option>Olomouc</option>
+                         <option>Brno</option>
+                         <option>Praha</option>
+                         </select>
+       </div> 
+       
+<div class="col-sm-2">             
+<button type="button" id="button" class="btn btn-primary">Hledej</button>
+</div>
+</div> 
+   
+       <div class="row">
+         <p class="choosen_city"  id="choosen_city"></p>
+       </div>
+    
+   </div>
+   </div>
+
+   <div class="flex-container">
+     <div>
+       <p id="denn1"></p>    <p id="time1"></p>
+       <p id="tepp1"></p>
+             
+       <p id="temp1"></p>
+       <p id="spee1"></p>
+       <p id="icons1"></p>
+   </div>
+ 
+   <div>
+     <p id="denn2"></p><p id="time2"></p>
+     <p id="tepp2"></p>
+               
+     <p id="temp2"></p>
+     <p id="spee2"></p>
+     <p id="icons2"></p>
+ </div>
+ 
+ <div>
+   <p id="denn3"></p>    <p id="time3"></p>  
+   <p id="tepp3"></p>
+       
+   <p id="temp3"></p>
+   <p id="spee3"></p>
+   <p id="icons3"></p>
+ </div>
+ 
+ <div>
+   <p id="denn4"></p><p id="time4"></p>  
+   <p id="tepp4"></p>
+           
+   <p id="temp4"></p>
+   <p id="spee4"></p>
+ <p id="icons4"></p>
+ </div>
+ 
+ <div>
+   <p id="denn5"></p> <p id="time5"></p>
+   <p id="tepp5"></p>
+            
+   <p id="temp5"></p>
+   <p id="spee5"></p>
+   <p id="icons5"></p>
+ </div>
+ 
+ <div>
+   <p id="denn6"></p><p id="time6"></p>
+   <p id="tepp6"></p>
+             
+   <p id="temp6"></p>
+   <p id="spee6"></p>
+ <p id="icons6"></p>
+ </div>
+ 
+ <div>
+   <p id="denn7"></p> <p id="time7"></p> 
+   <p id="tepp7"></p>
+           
+   <p id="temp7"></p>
+   <p id="spee7"></p>
+   <p id="icons7"></p>
+ </div>
+ 
+ <div>
+   <p id="denn8"></p><p id="time8"></p>
+   <p id="tepp8"></p>
+             
+   <p id="temp8"></p>
+   <p id="spee8"></p>
+ <p id="icons8"></p>
+ </div>
+ 
+ <div>
+   <p id="denn9"></p><p id="time9"></p>  
+   <p id="tepp9"></p>
+           
+   <p id="temp9"></p>
+   <p id="spee9"></p>
+   <p id="icons9"></p>
+ </div>
+ 
+ <div>
+   <p id="denn10"></p><p id="time10"></p>  
+   <p id="tepp10"></p>
+           
+   <p id="temp10"></p>
+   <p id="spee10"></p>
+ <p id="icons10"></p>
+ </div>
+ 
+ <div>
+   <p id="denn11"></p>  <p id="time11"></p> 
+   <p id="tepp11"></p>
+          
+   <p id="temp11"></p>
+   <p id="spee11"></p>
+   <p id="icons11"></p>
+ </div>
+ 
+ <div>
+   <p id="denn12"></p>     <p id="time12"></p>
+   <p id="tepp12"></p>
+        
+   <p id="temp12"></p>
+   <p id="spee12"></p>
+ <p id="icons12"></p>
+ </div>
+ 
+ <div>
+   <p id="denn13"></p>  <p id="time13"></p> 
+   <p id="tepp13"></p>
+          
+   <p id="temp13"></p>
+   <p id="spee13"></p>
+   <p id="icons13"></p>
+ </div>
+ 
+ <div>
+   <p id="denn14"></p><p id="time14"></p>
+   <p id="tepp14"></p>
+             
+   <p id="temp14"></p>
+   <p id="spee14"></p>
+ <p id="icons14"></p>
+ </div>
+ 
+ <div>
+   <p id="denn15"></p>  <p id="time15"></p>
+   <p id="tepp15"></p>
+           
+   <p id="temp15"></p>
+   <p id="spee15"></p>
+   <p id="icons15"></p>
+ </div>
+ 
+ <div>
+   <p id="denn16"></p>    <p id="time16"></p>
+   <p id="tepp16"></p>
+         
+   <p id="temp16"></p>
+   <p id="spee16"></p>
+ <p id="icons16"></p>
+ </div>
+ 
+ <div>
+   <p id="denn17"></p>      <p id="time17"></p> 
+   <p id="tepp17"></p>
+      
+   <p id="temp17"></p>
+   <p id="spee17"></p>
+   <p id="icons17"></p>
+ </div>
+ 
+ <div>
+   <p id="denn18"></p>   <p id="time18"></p>
+   <p id="tepp18"></p>
+          
+   <p id="temp18"></p>
+   <p id="spee18"></p>
+ <p id="icons18"></p>
+ </div>
+ 
+ <div>
+   <p id="denn19"></p>      <p id="time19"></p> 
+   <p id="tepp19"></p>
+      
+   <p id="temp19"></p>
+   <p id="spee19"></p>
+   <p id="icons19"></p>
+ </div>
+ 
+ <div>
+   <p id="denn20"></p>      <p id="time20"></p>
+   <p id="tepp20"></p>
+       
+   <p id="temp20"></p>
+   <p id="spee20"></p>
+ <p id="icons20"></p>
+ </div>
+ 
+ <div>
+   <p id="denn21"></p>      <p id="time21"></p>          
+
+   <p id="tepp21"></p>
+   <p id="temp21"></p>
+   <p id="spee21"></p>
+   <p id="icons21"></p>
+ </div>
+ 
+ <div>
+   <p id="denn22"></p>      <p id="time22"></p>         
+   <p id="tepp22"></p>
+
+   <p id="temp22"></p>
+   <p id="spee22"></p>
+   <p id="icons22"></p>
+   </div>
+   
+   <div>
+     <p id="denn23"></p>        <p id="time23"></p> 
+     <p id="tepp23"></p>
+      
+     <p id="temp23"></p>
+     <p id="spee23"></p>
+     <p id="icons23"></p>
+   </div>
+ 
+   <div>
+     <p id="denn24"></p>       <p id="time24"></p> 
+     <p id="tepp24"></p>
+       
+     <p id="temp24"></p>
+     <p id="spee24"></p>
+     <p id="icons24"></p>
+     </div>
+     
+     <div>
+       <p id="denn25"></p>     <p id="time25"></p> 
+       <p id="tepp25"></p>
+           
+       <p id="temp25"></p>
+       <p id="spee25"></p>
+       <p id="icons25"></p>
+     </div>
+
+     <div>
+       <p id="denn26"></p>        <p id="time26"></p>   
+       <p id="tepp26"></p>
+      
+       <p id="temp26"></p>
+       <p id="spee26"></p>
+       <p id="icons26"></p>
+     </div>
+ 
+         </div>
+
+    <script src="js/main.js"></script>
+
+     
+ </body>
+</html>

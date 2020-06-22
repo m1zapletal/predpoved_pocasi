@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<style>
+  .flex-container {
+display: -webkit-flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.jumbotron{
+background-image: radial-gradient(yellow,lightgreen);
+}
+
+body {
+background-color: skyblue;
+}
+.flex-container > div {
+ background-image: radial-gradient(rgb(113, 194, 241),lightgreen); 
+  width: auto;
+  margin: 5px;
+text-align: left;
+line-height: auto;
+border-radius: 10px
+}
+.choosen_town{text-align: center;}
+
+.container-fluid{background-color: skyblue;}
+header input {  width: 100%;
+max-width: 280px;
+padding: 10px 15px;
+border: none;
+outline: none;
+background-color: rgba(255, 255, 255, 255);
+border-radius: 14px 0px 14px 0px;
+border-bottom: 3px solid skyblue;
+
+color: #313131;
+font-size: 15px;
+}
+
+#teplota {
+color: #FFF;
+font-size: 102px;
+font-weight: 900;
+margin: 0px 0px;
+text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+text-align:center;
+
+}
+#datum {
+color: #FFF;
+font-size: 25px;
+margin-top: 10px;
+text-align:center;
+
+}
+#vitr {
+color: #FFF;
+font-size: 32px;
+font-weight: 500;
+text-align:center;
+
+margin-bottom: 5px;
+}
+#minmax {
+color: #FFF;
+font-size: 24px;
+font-weight: 500;
+text-align:center;
+
+text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+#icons {
+
+text-align: center;
+
+
+}
+     </style>
+
+
+ </head>
+
+   
+     <!--[if lt IE 8]>
+         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+     <![endif]-->
+     <nav class="navbar navbar-default ">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <a class="navbar-brand" >Předpověd počasí</a>
+         </div>
+                         <ul class="nav navbar-nav">
+             <li class="active" ><a href="index2.html">Aktuální</a></li>
+             <li ><a href="index.html">Dlouhodobá</a></li>
+             
+           </ul> 
+         </div>
+         
+       </div>
+     </nav>
+     
+
+
+<div class="jumbotron jumbotron-fluid">
+ <div class="container">
+   <div class="row"> <label></label></div>
+       <div class="row">
+         <div class="col-sm-3"><h4>Napiš Město:</h4></div>
+         <div class="col-sm-4">
+                   
+                 <header>  
+                   <input type="text" autocomplete="off" id="search-box" 
+                     placeholder="Search for a city..." />
+                   </header>
+
+                 </div></div>
+                 
+<div class="row"> <label></label></div>
+
+
+                 <div class="row">
+                   <div class="col-sm-3"><h4>Vyber Město:</h4></div>
+               <div class="col-sm-2">
+                       <select class="form-control" id="select-box">
+                         <option>-</option>
+                         <option>Olomouc</option>
+                         <option>Brno</option>
+                         <option>Praha</option>
+                         </select>
+       </div> 
+       
+<div class="col-sm-2">             
+<button type="button" id="button" class="btn btn-primary">Hledej</button>
+</div>
+</div> 
+   
+       <div class="row">
+       <p class="choosen_city"  id="choosen_city"></p>
+     </div>
+    
+   </div>
+   </div>
+         
+   
+
+
+
+<div class="flex-container">
+ <div>
+   <p id="datum"></p>
+   <p id="teplota"></p>
+   <p id="minmax"></p>
+   <p id="vitr"></p>
+   <p id="icons"></p>
+</div>
+
+     </div>
+     <!-- /container -->       <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+     <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
+
+     <!--<script src="js/vendor/bootstrap.min.js"></script>-->
+
+    <script src="js/main2.js"></script>
+    
+     
+     <!--<script src="js/main_zaloha.js"></script>-->
+
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+     
+ </body>
+</html>
